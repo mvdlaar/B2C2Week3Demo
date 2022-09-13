@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Fruit>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>Fruit Naam </th>
+            <th>Fruit Kleur</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td width="50%">@obj.Naam</td>
+                <td width="50%">@obj.Kleur</td>
+            </tr>
+        }
+    </tbody>
+</table>
