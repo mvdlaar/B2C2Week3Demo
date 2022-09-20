@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace B2C2Week3Demo.Models
 {
@@ -10,6 +11,7 @@ namespace B2C2Week3Demo.Models
         [Required]
         public string Naam { get; set; }
 
+        [DisplayName("Fruitkleur")]
         public string Kleur { get; set; }
     }
 }
