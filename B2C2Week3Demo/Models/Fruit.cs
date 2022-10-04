@@ -13,5 +13,6 @@ namespace B2C2Week3Demo.Models
 
         [DisplayName("Fruitkleur")]
         public string Kleur { get; set; }
+        public Mand Mand { get; set; }
     }
 }

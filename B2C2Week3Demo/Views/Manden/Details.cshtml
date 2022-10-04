@@ -1,0 +1,44 @@
+﻿@model B2C2Week3Demo.Models.Mand
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mand</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Materiaal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Materiaal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Volume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Volume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kleur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kleur)
+        </dd>
+        <dt class="col-sm-2">Fruit</dt>
+        <dd class="col-sm-10">
+        @foreach (Fruit fruit in Model.Fruit)
+        {
+            @fruit.Naam<br/>
+        }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

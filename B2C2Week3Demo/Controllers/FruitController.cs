@@ -1,6 +1,7 @@
 ﻿using B2C2Week3Demo.Data;
 using B2C2Week3Demo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace B2C2Week3Demo.Controllers
 {

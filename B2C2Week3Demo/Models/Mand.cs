@@ -9,6 +9,6 @@ namespace B2C2Week3Demo.Models
         public string? Materiaal { get; set; }
         public int? Volume { get; set; }
         public string? Kleur { get; set; }
-        public ICollection<Fruit> Fruit { get; set; }
+        public ICollection<Fruit> Fruit { get; set; } = new List<Fruit>();
     }
 }
